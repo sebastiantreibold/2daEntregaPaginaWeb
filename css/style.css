@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    background-color: #ebebeb;
+}
+
+main {
+    background-color: #ebebeb;
+    padding: 1px; /* Ajusta este valor según tu diseño para dejar espacio alrededor del contenido de 'main' */
+}
+/* Seccion de Nav-Bar */
+
+.navbar{
+    background-color: #ebebeb;
+}
+
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px !important;
+    color: #2e1572 !important; 
+}
+
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px!important;
+    color: #2e1572 !important; 
+}
+
+.navbar .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232e1572' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .navbar-toggler{
+    border-color:#2e1572;
+    border-width: 2px;
+}
+
+.dropdown-menu{
+    background-color: #ebebeb !important;
+}
+
+.dropdown-menu li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px!important;
+    color: #2e1572 !important; 
+}
+
+/*Seccion de Footer*/
+
+.terminos {
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #2e1572; 
+    border-top: 1px solid #2e1572; 
+    background-color: #ebebeb
+}
+
+.terminos h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-top: 30px; 
+    margin-left: 100px;
+    color: #2e1572;
+}
+
+.terminos p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-top: 20px; 
+    margin-left: 100px;
+    color: #2e1572;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #2e1572;
+    padding: 20px;
+}
+
+/* Seccion de Conteiner Nueva*/
+
+.grilla{
+    background-color: #ebebeb;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-areas: 
+     'a1 a2';
+}
+
+.box{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1{
+    grid-area: a1;
+    width: 100%;
+    height: 350px;
+}
+.b2{
+    width: 100%;
+    height: 350px;
+    grid-area: a2;
+}
+
+.main-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #2e1572;
+    margin-top: 50px;
+}
+
+.sub-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #2e1572;
+    margin: 0; 
+}
+
+.custom-button {
+    width: 250px;
+    height: 60px;
+    background-color: #2e1572;
+    color: #ebebeb;
+    border: 3px solid #ebebeb;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.1); 
+}
+
+.custom-button:hover {
+    background-color: #ebebeb;
+    color: #2e1572;
+    border-color: #2e1572;
+}
+
+@media (max-width: 1024px){
+
+    /*Medidas del footer con celular*/
+
+    .terminos {
+        padding: 20px;
+        width: 100%;
+        height: 180px;
+    }
+
+    .terminos h3{
+        font-size: 15px;
+        margin-top: 20px; 
+        margin-left: 20px;
+    }
+
+    .terminos p{
+        font-size: 10px;
+        margin-top: 20px; 
+        margin-left: 20px;
+    }   
+
+    /*Medidas de la primer grilla con celular*/
+
+    .grilla{
+        margin: 0;
+        width: 100%;
+        grid-template-areas: 
+        'a1'
+        'a2'; 
+        margin-top: -50px;
+    }
+
+    .botones{
+        margin-top: -50px;
+        text-align: center;
+    }
+
+    .custom-button {
+
+        width: 160px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 15px;
+    }   
+
+    .main-text {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 25px;
+        margin-top: 0px; 
+    }
+    
+    .sub-text {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+
+    .b1 {
+        height: 400px;
+    }
+    .b2 {
+        margin-top: -100px;
+        height: 400px;
+    }
+
+    .box img{
+        margin: 0;
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .nav-link:hover {
+        transform: none;
+    }
+
+    .titulo{
+        font-size: 30px;
+        width: 0%;
+    }
+
+    
+
+}
+
+/*Estructura*/
+.grilla-extensa{
+    margin-bottom: 0px;
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 400px;
+    background-color:  #2e1572;
+    grid-template-areas: 
+     'x0 x0 x0'
+     'x2 x1 x3';
+
+}
+
+.titulo{
+    margin-top: 100px;
+     width: 90%;
+     height: 200px;
+     grid-area: x0;
+}
+
+.t1{
+    margin-top: -50px;
+    margin-left: 25%;
+    width: 300px;
+    height: 300px;
+    grid-area: x1;
+}
+.t2{
+    margin-top: -50px;
+    margin-left: 50%;
+    width: 300px;
+    height: 300px;
+    grid-area: x2;
+}
+
+.t3{
+    margin-top: -50px;
+    width: 300px;
+    height: 300px;
+    grid-area: x3;
+}
+
+.top{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width: 1024px){
+
+    .header .nav-list li {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+
+    .tema{
+        text-align: center;
+    }
+
+    .grilla-extensa{
+        margin: 0;
+        width: 100%;
+        height: 1300px;
+        grid-template-areas: 
+        'x0'
+        'x1'
+        'x2'
+        'x3'; ; 
+        padding: 0;
+    }
+    .titulo{
+        justify-content: center;
+        margin: 0 ;
+        margin-top: 100px;
+        width: 100%;
+        height: 100px;
+        grid-area: x0;
+    }
+    .t1{
+        margin: 0 ;
+        width: 100%;
+        height: 100px;
+        grid-area: x1;
+    }
+    .t2{
+        margin: 0 ;
+        width: 100%;
+        height: 100px;
+        grid-area: x2;
+    }
+    .t3{
+        margin: 0 ;
+        width: 100%;
+        height: 200px;
+        grid-area: x3;
+    }
+}
+
+
+/*Diseño*/
+
+.titulo h3{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px; /* Tamaño de fuente específico para BOLD◉X */
+    color: #ebebeb;
+}
+
+.cancion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; /* Tamaño de fuente específico para BOLD◉X */
+    color: #ebebeb;
+}
+
+/*Noticias*/
+
+.grilla-noticias{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-areas: 
+     'y1 y1 y2'
+     'y3 y3 y3'
+     'y4 y5 y5'
+     'y6 y6 y6';
+}
+
+.box-n{
+    border: 2px solid #ebebeb;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #2e1572;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; /* Tamaño de fuente específico para BOLD◉X */
+    color: #ebebeb;
+}
+
+.n1{
+    grid-area: y1;
+    width: 100%;
+    height: 600px;
+}
+
+.n2{
+    grid-area: y2;
+    width: 100%;
+    height: 600px;
+}
+
+.n3{
+    grid-area: y3;
+    width: 100%;
+    height: 600px;
+}
+
+.n4{
+    grid-area: y4;
+    width: 100%;
+    height: 600px;
+}
+
+.n5{
+    grid-area: y5;
+    width: 100%;
+    height: 600px;
+}
+
+.n6{
+    grid-area: y6;
+    width: 100%;
+    height: 600px;
+}
+
+
+@media (max-width: 1024px){
+
+    .grilla-noticias{
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        'y1'
+        'y2'
+        'y3'
+        'y4'
+        'y5'
+        'y6';
+    }
+}
+
+/* Diseño de Lanzamientos*/
+
+.grilla-lanzamientos{
+    margin-top: 2px;
+    display: grid;
+    grid-template-areas: 
+     'z1'
+     'z2'
+     'z3';
+     background-color: #ebebeb;
+}
+
+.s1{
+    grid-area: z1;
+    background-color: #2e1572;
+    margin-bottom: 50px;
+}
+
+.s2{
+    margin-top: 10px;
+    grid-area: z2; 
+    margin-bottom: 10px;
+    background-color: #2e1572;
+}
+
+.s3{
+    grid-area: z3;
+    background-color: #2e1572;
+}
+
+
+.box-l{
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px; /* Tamaño de fuente específico para BOLD◉X */
+    color: #ebebeb;
+
+    height: 600px;
+    width: 100%;
+
+    display: grid;
+    grid-template-areas: 
+     'p1 p1 p1'
+     'p2 p3 p4' ;
+    background-color:  #2e1572;
+}
+
+
+.lanzamiento-tipo{
+    grid-area: p1;
+    width: 100%;
+}
+
+.c1 {
+    grid-area: p2;
+}
+
+.c2 {
+    margin-left: 100px;
+    grid-area: p3;
+    margin-right: 100px;
+}
+
+.c3 {
+    grid-area: p4;
+}
+
+.box-lc{
+    border: 2px solid #ebebeb;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; /* Tamaño de fuente específico para BOLD◉X */
+    color: #ebebeb;
+
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+}
+
+@media (max-width: 1024px){
+
+    .box-l{
+        font-size: 100px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px; /* Tamaño de fuente específico para BOLD◉X */
+        color: #ebebeb;
+        height: 1200px;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+         'p1'
+         'p2'
+         'p3'
+         'p4' ;
+        background-color:  #2e1572;    
+    }
+
+    .lanzamiento-tipo{
+        margin-top: 40px;
+        font-size: 20px; /* Tamaño de fuente específico para BOLD◉X */
+    }
+    
+
+    .c1 {
+        margin:  0;
+    }
+    
+    .c2 {
+        margin:  0;
+    }
+    
+    .c3 {
+        margin:  0;
+    }
+
+    .box-lc{    
+        margin-top: 10px;
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+    }
+    
+}
+
+/*Diseño de Contacto*/
+
+.grilla-contacto{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-areas: 
+     'a1 a2';
+     height: 560px;
+}
+
+.box-contacto{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-contacto h3{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #2e1572;
+}
+
+.box-contacto iframe{
+    border: 2px solid #2e1572;
+}
+
+.cont1{
+    align-content: flex-start;
+    align-items: center;
+    text-align: center;
+    grid-area: a1;
+    width: 100%;
+    height: 700px;
+}
+.cont2{
+    text-align: center;
+    align-content: flex-start;
+    width: 100%;
+    height: 700px;
+    grid-area: a2;
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.contactanos{
+    margin-left: 200px; 
+}
+
+.medio {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.medio img {
+    display: flex;
+    width: 8%;
+    height: 8%;
+    object-fit: cover;
+}
+
+.medio p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 20px; 
+    margin-left: 20px;  
+}
+
+
+
+@media (max-width: 1024px){
+    .grilla-contacto{
+        margin:0;
+        margin-top: 20px;
+        grid-template-areas: 
+         'a1'
+         'a2';
+         height: 700px;
+    }
+
+    .map{
+        width: 300px;
+        height: 300px;
+    }
+    .cont1{
+        height: 100%;
+    }
+    .cont2{
+        height: 400px;
+    }
+    
+    .medio {
+        display: flex;
+    }
+
+    .medio p {
+        margin-top: 8px; 
+        margin-left: 20px;  
+    }
+    
+    
+}
